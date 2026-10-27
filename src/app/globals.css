@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@theme {
+  --color-ink: #13201c;
+  --color-muted: #5b6b66;
+  --color-line: #e3e8e5;
+  --color-canvas: #f6f7f4;
+  --color-brand-50: #ecf8f3;
+  --color-brand-100: #d2efe3;
+  --color-brand-500: #12936a;
+  --color-brand-600: #0c7a57;
+  --color-brand-700: #0a6147;
+  --color-brand-900: #063526;
+  --color-danger: #b42318;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+}
+
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 disabled:cursor-not-allowed disabled:opacity-60;
+}
+@utility btn-primary {
+  @apply btn bg-brand-600 text-white hover:bg-brand-700;
+}
+@utility btn-ghost {
+  @apply btn border border-line bg-white text-ink hover:bg-brand-50;
+}
+@utility btn-danger {
+  @apply btn border border-red-200 bg-white text-danger hover:bg-red-50;
+}
+@utility card {
+  @apply rounded-2xl border border-line bg-white;
+}
+@utility input {
+  @apply w-full rounded-xl border border-line bg-white px-3.5 py-2.5 text-sm transition outline-none placeholder:text-muted/70 focus:border-brand-500 focus:ring-4 focus:ring-brand-100 aria-[invalid=true]:border-danger aria-[invalid=true]:ring-red-100;
+}
+@utility label {
+  @apply mb-1.5 block text-sm font-medium;
+}
+@utility field-error {
+  @apply mt-1.5 text-xs font-medium text-danger;
+}
+@utility container-page {
+  @apply mx-auto w-full max-w-6xl px-4 sm:px-6;
+}
