@@ -2,7 +2,7 @@
 
 A booking and payments app for local service providers in Lagos and Accra. Customers browse providers, pick a live time slot, and pay in the provider's currency (₦, $ or ₵). Providers get a dashboard with their week, earnings and availability settings.
 
-**Live:** _add your Render URL here_ · **Role:** sole frontend engineer (design, frontend, mock API)
+**Role:** sole frontend engineer (design, frontend, mock API)
 
 ## Stack
 
